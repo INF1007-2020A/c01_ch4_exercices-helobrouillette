@@ -3,7 +3,7 @@
 
 
 def is_even_len(string: str) -> bool:
-    return len(string)%2
+    return len(string)%2==0
 
 
 def remove_third_char(string: str) -> str:
@@ -23,7 +23,7 @@ def get_nb_words(sentence: str) -> int:
 
 
 def main() -> None:
-    string = "Bonjour!"
+    string = "Bonjour"
     parity = 'pair' if is_even_len(string) else 'impair'
     print(f"Le nombre de caractère dans la chaine '{string}' est {parity}")
 
