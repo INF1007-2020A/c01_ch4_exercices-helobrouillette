@@ -35,7 +35,7 @@ def main() -> None:
 
     print(f"Le nombre d'occurrence de l dans hello world est : {get_nb_char(string, 'l')}")
     
-    string = "Baby shark doo doo doo doo doo doo"
+    string = "Baby shark doo doo doo doo doo "
     print(f"Le nombre de mots dans la chaine {string} est: {get_nb_words(string)}")
 
 
