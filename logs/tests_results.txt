@@ -23,8 +23,8 @@ Traceback (most recent call last):
   File "test_exercice.py", line 43, in <listcomp>
     output = [exercice.replace_char(v[0], v[1], v[2]) for v in values]
   File "/home/runner/work/c01_ch4_exercices-helobrouillette/c01_ch4_exercices-helobrouillette/exercice.py", line 14, in replace_char
-    return str.replace()
-TypeError: descriptor 'replace' of 'str' object needs an argument
+    return str.replace(stringold_char,new_char)
+NameError: name 'stringold_char' is not defined
 
 ======================================================================
 FAIL: test_get_nb_char (__main__.TestExercice)
