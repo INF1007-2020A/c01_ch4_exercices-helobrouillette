@@ -23,7 +23,7 @@ def get_nb_words(sentence: str) -> int:
 
 
 def main() -> None:
-    string = ""
+    string = "2345"
     parity = 'pair' if is_even_len(string) else 'impair'
     print(f"Le nombre de caractère dans la chaine '{string}' est {parity}")
 
