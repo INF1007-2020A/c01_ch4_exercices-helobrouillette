@@ -19,7 +19,7 @@ def get_nb_char(string: str, char: str) -> int:
 
 
 def get_nb_words(sentence: str) -> int:
-    return len(string.split(sentence))
+    return len(str.split(sentence))
 
 
 def main() -> None:
