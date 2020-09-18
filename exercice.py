@@ -3,7 +3,8 @@
 
 
 def is_even_len(string: str) -> bool:
-    chaine=int(string)/
+    chaine=int(string)/2
+    
     return len(string)
 
 
