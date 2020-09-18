@@ -1,7 +1,7 @@
 test_get_nb_char (__main__.TestExercice) ... FAIL
 test_get_nb_words (__main__.TestExercice) ... ERROR
 test_pair (__main__.TestExercice) ... FAIL
-test_remove_third_char (__main__.TestExercice) ... ERROR
+test_remove_third_char (__main__.TestExercice) ... ok
 test_replace_char (__main__.TestExercice) ... FAIL
 
 ======================================================================
@@ -13,18 +13,6 @@ Traceback (most recent call last):
   File "test_exercice.py", line 75, in <listcomp>
     output = [exercice.get_nb_words(v[0], v[1]) for v in values]
 TypeError: get_nb_words() takes 1 positional argument but 2 were given
-
-======================================================================
-ERROR: test_remove_third_char (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 27, in test_remove_third_char
-    output = [exercice.remove_third_char(v) for v in values]
-  File "test_exercice.py", line 27, in <listcomp>
-    output = [exercice.remove_third_char(v) for v in values]
-  File "/home/runner/work/c01_ch4_exercices-helobrouillette/c01_ch4_exercices-helobrouillette/exercice.py", line 10, in remove_third_char
-    return str[:2]+str[3:]
-TypeError: 'type' object is not subscriptable
 
 ======================================================================
 FAIL: test_get_nb_char (__main__.TestExercice)
@@ -51,13 +39,13 @@ FAIL: test_pair (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 21, in test_pair
     'Mauvaise identification de la parité de la longueur de la chaine'
-AssertionError: Lists differ: [8, 7, 1] != [True, False, False]
+AssertionError: Lists differ: [<built-in function len>, <built-in function len>, <built-in function len>] != [True, False, False]
 
 First differing element 0:
-8
+<built-in function len>
 True
 
-- [8, 7, 1]
+- [<built-in function len>, <built-in function len>, <built-in function len>]
 + [True, False, False] : Mauvaise identification de la parité de la longueur de la chaine
 
 ======================================================================
@@ -78,4 +66,4 @@ First differing element 0:
 ----------------------------------------------------------------------
 Ran 5 tests in 0.001s
 
-FAILED (failures=3, errors=2)
+FAILED (failures=3, errors=1)
