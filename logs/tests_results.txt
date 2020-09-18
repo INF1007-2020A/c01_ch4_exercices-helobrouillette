@@ -1,6 +1,6 @@
 test_get_nb_char (__main__.TestExercice) ... ok
 test_get_nb_words (__main__.TestExercice) ... ERROR
-test_pair (__main__.TestExercice) ... FAIL
+test_pair (__main__.TestExercice) ... ERROR
 test_remove_third_char (__main__.TestExercice) ... ok
 test_replace_char (__main__.TestExercice) ... ok
 
@@ -15,21 +15,18 @@ Traceback (most recent call last):
 TypeError: get_nb_words() takes 1 positional argument but 2 were given
 
 ======================================================================
-FAIL: test_pair (__main__.TestExercice)
+ERROR: test_pair (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 21, in test_pair
-    'Mauvaise identification de la parité de la longueur de la chaine'
-AssertionError: Lists differ: [True, True, True] != [True, False, False]
-
-First differing element 1:
-True
-False
-
-- [True, True, True]
-+ [True, False, False] : Mauvaise identification de la parité de la longueur de la chaine
+  File "test_exercice.py", line 15, in test_pair
+    output = [exercice.is_even_len(v) for v in values]
+  File "test_exercice.py", line 15, in <listcomp>
+    output = [exercice.is_even_len(v) for v in values]
+  File "/home/runner/work/c01_ch4_exercices-helobrouillette/c01_ch4_exercices-helobrouillette/exercice.py", line 6, in is_even_len
+    return len(string%2)==0
+TypeError: not all arguments converted during string formatting
 
 ----------------------------------------------------------------------
 Ran 5 tests in 0.001s
 
-FAILED (failures=1, errors=1)
+FAILED (errors=2)
