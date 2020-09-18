@@ -39,13 +39,13 @@ FAIL: test_pair (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 21, in test_pair
     'Mauvaise identification de la parité de la longueur de la chaine'
-AssertionError: Lists differ: [<built-in function len>, <built-in function len>, <built-in function len>] != [True, False, False]
+AssertionError: Lists differ: [8, 7, 1] != [True, False, False]
 
 First differing element 0:
-<built-in function len>
+8
 True
 
-- [<built-in function len>, <built-in function len>, <built-in function len>]
+- [8, 7, 1]
 + [True, False, False] : Mauvaise identification de la parité de la longueur de la chaine
 
 ======================================================================
